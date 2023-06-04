@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ENCUESTA CAMPUS VIRTUAL</h1>
+    <form method="get">
+
+        <p>
+            <label for="">NOMBRE:</label>
+            <input type="text" name="nombre" maxlength="50">
+        </p>
+
+        <p>
+            <label for="">DEPARTAMENTO:</label>
+            <select name="departamento">
+                <option value="informatica">Informatica</option>
+                <option value="abogacia">Abogacía</option>
+                <option value="medicina">Medicina</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="">SEDE:</label>
+            <select name="sede">
+                <option value="sgo">Santiago del Estero</option>
+                <option value="juj">San Salvador de Jujuy</option>
+                <option value="raf">Rafaela</option>
+                <option value="bsas">Buenos Aires</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="">E-MAIL:</label>
+            <input type="email" name="email">
+        </p>
+
+        <p>
+            <label for="">TELÉFONO:</label>
+            <input type="tel" name="telefono">
+        </p>
+
+        <p>
+            <label for="">¿Utiliza habitualmente el campus virtual?</label>
+            si<input type="radio" name="campus_virtual" value="si">
+            no<input type="radio" name="campus_virtual" value="no">
+        </p>
+
+        <p>
+            <label for="">¿Estaria interesado/a en recibir formacion personalizada sobre las posibilidades de esta herramienta informatica?</label>
+            si<input type="radio" name="informacion" value="si">
+            no<input type="radio" name="informacion" value="no">
+        </p>
+
+        <h2>CALENDARIO APROXIMADO DE FORMACION</h2>
+
+        <p>
+            <label for="">TURNO PREFERENTE:</label>
+            Mañana<input type="checkbox" name="mañana">
+            Tarde<input type="checkbox" name="tarde">
+        </p>
+
+        <p>
+            <label for="">MES PREFERENTE:</label>
+            <select name="mes">
+                <option value="ene">Enero</option>
+                <option value="feb">Febrero</option>
+                <option value="mar">Marzo</option>
+                <option value="abr">Abril</option>
+                <option value="may">Mayo</option>
+                <option value="jun">Junio</option>
+                <option value="jul">Julio</option>
+                <option value="ago">Agosto</option>
+                <option value="sep">Septiembre</option>
+                <option value="oct">Octubre</option>
+                <option value="nov">Noviembre</option>
+                <option value="dic">Diciembre</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="">HORARIO PREFERENTE:</label>
+            <select name="horario">
+                <option value="9">9:00</option>
+                <option value="10">10:00</option>
+                <option value="11">11:00</option>
+                <option value="12">12:00</option>
+                <option value="13">13:00</option>
+                <option value="14">14:00</option>
+                <option value="15">15:00</option>
+                <option value="16">16:00</option>
+                <option value="17">17:00</option>
+                <option value="18">18:00</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="">COMENTARIOS:</label>
+            <textarea name="comentarios" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>

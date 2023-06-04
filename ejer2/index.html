@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .referencia {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .calendario {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .examen {
+        background-color: lightblue;
+        border-radius: 10%;
+    }
+
+    .feriado {
+        background-color: red;
+        border-radius: 10%;
+    }
+
+    .receso_inv {
+        background-color: greenyellow;
+        border-radius: 10%;
+    }
+
+    .feriado_academico {
+        background-color: pink;
+        border-radius: 10%;
+    }
+
+    .clases {
+        background-color: rgb(41, 41, 252);
+        border-radius: 10%;
+    }
+
+    .colacion_grado {
+        background-color: yellow;
+        border-radius: 10%;
+    }
+</style>
+
+<body>
+    <h1>Calendario</h1>
+    <p style="text-align: center"><em>CALENDARIO ACADÉMICO 2023</em></p>
+    <p style="text-align: center">Titulaciones presenciales</p>
+
+    <div class="calendario">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="7">ENERO</th>
+                </tr>
+                <tr>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>M</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>S</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="feriado">1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="7">FEBRERO</th>
+                </tr>
+                <tr>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>M</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>S</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td class="examen">8</td>
+                    <td class="examen">9</td>
+                    <td class="examen">10</td>
+                    <td class="examen">11</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td class="examen">13</td>
+                    <td class="examen">14</td>
+                    <td class="examen">15</td>
+                    <td class="examen">16</td>
+                    <td class="examen">17</td>
+                    <td class="examen">18</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td class="feriado">20</td>
+                    <td class="feriado">21</td>
+                    <td class="examen">22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="7">MARZO</th>
+                </tr>
+                <tr>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>M</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>S</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="examen">6</td>
+                    <td class="examen">7</td>
+                    <td class="examen">8</td>
+                    <td class="examen">9</td>
+                    <td class="examen">10</td>
+                    <td class="examen">11</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td class="examen">13</td>
+                    <td class="examen">14</td>
+                    <td class="examen">15</td>
+                    <td class="examen">16</td>
+                    <td class="examen">17</td>
+                    <td class="examen">18</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td class="clases">20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td class="feriado">24</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="7">ABRIL</th>
+                </tr>
+                <tr>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>M</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>S</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="feriado">2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td class="feriado">6</td>
+                    <td class="feriado">7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td class="colacion_grado">21</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td class="feriado">27</td>
+                    <td>28</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="7">MAYO</th>
+                </tr>
+                <tr>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>M</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>S</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td class="feriado">1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="examen">8</td>
+                    <td class="examen">9</td>
+                    <td class="examen">10</td>
+                    <td class="examen">11</td>
+                    <td class="examen">12</td>
+                    <td class="examen">13</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td class="feriado">25</td>
+                    <td class="feriado">26</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="7">JUNIO</th>
+                </tr>
+                <tr>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>M</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>S</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td class="feriado">17</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td class="feriado">19</td>
+                    <td class="feriado">20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td class="clases">30</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="7">JULIO</th>
+                </tr>
+                <tr>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>M</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>S</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="examen">3</td>
+                    <td class="examen">4</td>
+                    <td class="examen">5</td>
+                    <td class="examen">6</td>
+                    <td class="examen">7</td>
+                    <td class="examen">8</td>
+                </tr>
+                <tr>
+                    <td class="feriado">9</td>
+                    <td class="examen">10</td>
+                    <td class="examen">11</td>
+                    <td class="examen">12</td>
+                    <td class="examen">13</td>
+                    <td class="examen">14</td>
+                    <td class="examen">15</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td class="receso_inv">17</td>
+                    <td class="receso_inv">18</td>
+                    <td class="receso_inv">19</td>
+                    <td class="receso_inv">20</td>
+                    <td class="receso_inv">21</td>
+                    <td class="receso_inv">22</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td class="receso_inv">24</td>
+                    <td class="feriado">25</td>
+                    <td class="receso_inv">26</td>
+                    <td class="receso_inv">27</td>
+                    <td class="receso_inv">28</td>
+                    <td class="receso_inv">29</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td class="clases">31</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="7">AGOSTO</th>
+                </tr>
+                <tr>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>M</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>S</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td class="feriado">21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="7">SEPTIEMBRE</th>
+                </tr>
+                <tr>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>M</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>S</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="examen">4</td>
+                    <td class="examen">5</td>
+                    <td class="examen">6</td>
+                    <td class="examen">7</td>
+                    <td class="examen">8</td>
+                    <td class="examen">9</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td class="feriado_academico">17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td class="feriado_academico">21</td>
+                    <td>22</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="7">OCTUBRE</th>
+                </tr>
+                <tr>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>M</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>S</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td class="colacion_grado">12</td>
+                    <td class="feriado">13</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td class="feriado">16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="7">NOVIEMBRE</th>
+                </tr>
+                <tr>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>M</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>S</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td class="feriado">2</td>
+                    <td>3</td>
+                    <td class="clases">4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td class="examen">13</td>
+                    <td class="examen">14</td>
+                    <td class="examen">15</td>
+                    <td class="examen">16</td>
+                    <td class="examen">17</td>
+                    <td class="examen">18</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td class="feriado">20</td>
+                    <td class="examen">21</td>
+                    <td class="examen">22</td>
+                    <td class="examen">23</td>
+                    <td class="examen">24</td>
+                    <td class="examen">25</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="7">DICIEMBRE</th>
+                </tr>
+                <tr>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>M</th>
+                    <th>M</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>S</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td class="feriado">8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="examen">11</td>
+                    <td class="examen">12</td>
+                    <td class="examen">13</td>
+                    <td class="examen">14</td>
+                    <td class="examen">15</td>
+                    <td class="examen">16</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td class="examen">18</td>
+                    <td class="examen">19</td>
+                    <td class="examen">20</td>
+                    <td class="examen">21</td>
+                    <td class="examen">22</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td class="feriado">25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="referencia">
+        <p class="feriado">Feriados</p>
+        <p class="receso_inv">Receso de invierno</p>
+        <p class="feriado_academico">Feriado academico</p>
+        <p class="examen">Examenes</p>
+        <p class="clases">Desarrollo de clases</p>
+        <p class="colacion_grado">Colacion de grados</p>
+    </div>
+
+</body>
+
+</html>
